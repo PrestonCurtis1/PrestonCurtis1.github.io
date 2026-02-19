@@ -332,3 +332,239 @@ strong {
   height: 32px;
   border-radius: 6px;
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+/* Tablets and below (768px) */
+@media (max-width: 768px) {
+  body {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  /* Hero layout stacks on mobile */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .hero-ctas .btn {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 12px 16px;
+  }
+
+  /* About hero stacks */
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .about-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Stack lists better on mobile */
+  .project-list li,
+  .contacts-list a.contact-link {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .project-list img,
+  .contacts-list img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Skills grid - 2 cols on tablet */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack list better */
+  .stack-list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+  }
+
+  .stack-list li {
+    padding: 8px;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  body {
+    margin: 12px auto;
+    padding: 0 12px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    margin-top: 16px;
+    font-size: 1rem;
+    gap: 6px;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* Navigation - smaller touch targets */
+  .site-nav {
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .site-nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-desc {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-ctas .btn {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .hero-right .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* About hero */
+  .about-hero {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .about-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  /* Project/Contact lists */
+  .project-list li,
+  .contacts-list a.contact-link {
+    padding: 10px;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  .project-list img,
+  .contacts-list img {
+    min-height: 24px;
+  }
+
+  /* Stack list single column on small phones */
+  .stack-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .stack-list li {
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stack-list img {
+    height: 24px;
+  }
+
+  /* Skills grid single column */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 12px;
+  }
+
+  /* Contact badges */
+  .collab-list {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .collab-list img {
+    height: 28px;
+  }
+
+  /* Interests list */
+  .interests-list li {
+    padding: 8px 10px;
+  }
+
+  /* HR */
+  hr {
+    margin: 16px 0;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 20px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
